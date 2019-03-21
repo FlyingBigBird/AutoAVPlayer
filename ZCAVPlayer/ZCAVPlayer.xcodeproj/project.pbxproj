@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E141B1521D215E0002F1176 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E141B1421D215E0002F1176 /* CoreFoundation.framework */; };
+		2E141B1721D215E5002F1176 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E141B1621D215E5002F1176 /* CoreImage.framework */; };
+		2E141B1921D215EB002F1176 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E141B1821D215EB002F1176 /* Photos.framework */; };
+		2E141B1B21D215F3002F1176 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E141B1A21D215F3002F1176 /* PhotosUI.framework */; };
+		2E28E9EA21CCF00300153E31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E28E9E921CCF00300153E31 /* AppDelegate.m */; };
+		2E28E9ED21CCF00300153E31 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E28E9EC21CCF00300153E31 /* ViewController.m */; };
+		2E28E9F021CCF00300153E31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E28E9EE21CCF00300153E31 /* Main.storyboard */; };
+		2E28E9F221CCF00300153E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E28E9F121CCF00300153E31 /* Assets.xcassets */; };
+		2E28E9F521CCF00300153E31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E28E9F321CCF00300153E31 /* LaunchScreen.storyboard */; };
+		2E28E9F821CCF00300153E31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E28E9F721CCF00300153E31 /* main.m */; };
+		2E28EA0221CCF00300153E31 /* ZCAVPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E28EA0121CCF00300153E31 /* ZCAVPlayerTests.m */; };
+		2E28EA0D21CCF00300153E31 /* ZCAVPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E28EA0C21CCF00300153E31 /* ZCAVPlayerUITests.m */; };
+		2E28EA2321CCF07A00153E31 /* MoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E28EA1D21CCF07900153E31 /* MoviePlayerViewController.m */; };
+		2E28EA2421CCF07A00153E31 /* ZCMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E28EA1F21CCF07900153E31 /* ZCMediaPlayer.m */; };
+		2E28EA2521CCF07A00153E31 /* ZCMediaPlayerMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E28EA2121CCF07900153E31 /* ZCMediaPlayerMaskView.m */; };
+		2E28EA2621CCF07A00153E31 /* MainVideoTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E28EA2221CCF07A00153E31 /* MainVideoTextCell.m */; };
+		2E28EA2C21CCF4E300153E31 /* ZCBasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E28EA2B21CCF4E300153E31 /* ZCBasicView.m */; };
+		2E28EA3021CCF7D200153E31 /* UILabel+LabCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E28EA2F21CCF7D200153E31 /* UILabel+LabCornerRadius.m */; };
+		2E4AF2FA21D09AF200C0A8C6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4AF2F921D09AF200C0A8C6 /* AVFoundation.framework */; };
+		2EEC6CB221D1381E00F8174B /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC6CB121D1381E00F8174B /* VideoCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E28E9FE21CCF00300153E31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E28E9DD21CCF00300153E31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E28E9E421CCF00300153E31;
+			remoteInfo = ZCAVPlayer;
+		};
+		2E28EA0921CCF00300153E31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E28E9DD21CCF00300153E31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E28E9E421CCF00300153E31;
+			remoteInfo = ZCAVPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E141B1421D215E0002F1176 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		2E141B1621D215E5002F1176 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		2E141B1821D215EB002F1176 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		2E141B1A21D215F3002F1176 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		2E28E9E521CCF00300153E31 /* ZCAVPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCAVPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E28E9E821CCF00300153E31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2E28E9E921CCF00300153E31 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2E28E9EB21CCF00300153E31 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2E28E9EC21CCF00300153E31 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2E28E9EF21CCF00300153E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E28E9F121CCF00300153E31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E28E9F421CCF00300153E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E28E9F621CCF00300153E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E28E9F721CCF00300153E31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E28E9FD21CCF00300153E31 /* ZCAVPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCAVPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E28EA0121CCF00300153E31 /* ZCAVPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCAVPlayerTests.m; sourceTree = "<group>"; };
+		2E28EA0321CCF00300153E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E28EA0821CCF00300153E31 /* ZCAVPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCAVPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E28EA0C21CCF00300153E31 /* ZCAVPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCAVPlayerUITests.m; sourceTree = "<group>"; };
+		2E28EA0E21CCF00300153E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E28EA1A21CCF07900153E31 /* MainVideoTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVideoTextCell.h; sourceTree = "<group>"; };
+		2E28EA1C21CCF07900153E31 /* MoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayerViewController.h; sourceTree = "<group>"; };
+		2E28EA1D21CCF07900153E31 /* MoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayerViewController.m; sourceTree = "<group>"; };
+		2E28EA1E21CCF07900153E31 /* ZCMediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCMediaPlayer.h; sourceTree = "<group>"; };
+		2E28EA1F21CCF07900153E31 /* ZCMediaPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCMediaPlayer.m; sourceTree = "<group>"; };
+		2E28EA2021CCF07900153E31 /* ZCMediaPlayerMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCMediaPlayerMaskView.h; sourceTree = "<group>"; };
+		2E28EA2121CCF07900153E31 /* ZCMediaPlayerMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCMediaPlayerMaskView.m; sourceTree = "<group>"; };
+		2E28EA2221CCF07A00153E31 /* MainVideoTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVideoTextCell.m; sourceTree = "<group>"; };
+		2E28EA2A21CCF4E300153E31 /* ZCBasicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCBasicView.h; sourceTree = "<group>"; };
+		2E28EA2B21CCF4E300153E31 /* ZCBasicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCBasicView.m; sourceTree = "<group>"; };
+		2E28EA2E21CCF7D200153E31 /* UILabel+LabCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LabCornerRadius.h"; sourceTree = "<group>"; };
+		2E28EA2F21CCF7D200153E31 /* UILabel+LabCornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LabCornerRadius.m"; sourceTree = "<group>"; };
+		2E4AF2F921D09AF200C0A8C6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2EEC6CB021D1381E00F8174B /* VideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		2EEC6CB121D1381E00F8174B /* VideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E28E9E221CCF00300153E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E141B1B21D215F3002F1176 /* PhotosUI.framework in Frameworks */,
+				2E141B1921D215EB002F1176 /* Photos.framework in Frameworks */,
+				2E141B1721D215E5002F1176 /* CoreImage.framework in Frameworks */,
+				2E141B1521D215E0002F1176 /* CoreFoundation.framework in Frameworks */,
+				2E4AF2FA21D09AF200C0A8C6 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E28E9FA21CCF00300153E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E28EA0521CCF00300153E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E28E9DC21CCF00300153E31 = {
+			isa = PBXGroup;
+			children = (
+				2E28E9E721CCF00300153E31 /* ZCAVPlayer */,
+				2E28EA0021CCF00300153E31 /* ZCAVPlayerTests */,
+				2E28EA0B21CCF00300153E31 /* ZCAVPlayerUITests */,
+				2E28E9E621CCF00300153E31 /* Products */,
+				2E4AF2F821D09AF200C0A8C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E28E9E621CCF00300153E31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E28E9E521CCF00300153E31 /* ZCAVPlayer.app */,
+				2E28E9FD21CCF00300153E31 /* ZCAVPlayerTests.xctest */,
+				2E28EA0821CCF00300153E31 /* ZCAVPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E28E9E721CCF00300153E31 /* ZCAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2E28EA1A21CCF07900153E31 /* MainVideoTextCell.h */,
+				2E28EA2221CCF07A00153E31 /* MainVideoTextCell.m */,
+				2EEC6CB021D1381E00F8174B /* VideoCell.h */,
+				2EEC6CB121D1381E00F8174B /* VideoCell.m */,
+				2E28EA2D21CCF7B600153E31 /* Extension */,
+				2E28EA1B21CCF07900153E31 /* MediaPlayer */,
+				2E28E9E821CCF00300153E31 /* AppDelegate.h */,
+				2E28E9E921CCF00300153E31 /* AppDelegate.m */,
+				2E28E9EB21CCF00300153E31 /* ViewController.h */,
+				2E28E9EC21CCF00300153E31 /* ViewController.m */,
+				2E28EA2A21CCF4E300153E31 /* ZCBasicView.h */,
+				2E28EA2B21CCF4E300153E31 /* ZCBasicView.m */,
+				2E28E9EE21CCF00300153E31 /* Main.storyboard */,
+				2E28E9F121CCF00300153E31 /* Assets.xcassets */,
+				2E28E9F321CCF00300153E31 /* LaunchScreen.storyboard */,
+				2E28E9F621CCF00300153E31 /* Info.plist */,
+				2E28E9F721CCF00300153E31 /* main.m */,
+			);
+			path = ZCAVPlayer;
+			sourceTree = "<group>";
+		};
+		2E28EA0021CCF00300153E31 /* ZCAVPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E28EA0121CCF00300153E31 /* ZCAVPlayerTests.m */,
+				2E28EA0321CCF00300153E31 /* Info.plist */,
+			);
+			path = ZCAVPlayerTests;
+			sourceTree = "<group>";
+		};
+		2E28EA0B21CCF00300153E31 /* ZCAVPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E28EA0C21CCF00300153E31 /* ZCAVPlayerUITests.m */,
+				2E28EA0E21CCF00300153E31 /* Info.plist */,
+			);
+			path = ZCAVPlayerUITests;
+			sourceTree = "<group>";
+		};
+		2E28EA1B21CCF07900153E31 /* MediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2E28EA1C21CCF07900153E31 /* MoviePlayerViewController.h */,
+				2E28EA1D21CCF07900153E31 /* MoviePlayerViewController.m */,
+				2E28EA1E21CCF07900153E31 /* ZCMediaPlayer.h */,
+				2E28EA1F21CCF07900153E31 /* ZCMediaPlayer.m */,
+				2E28EA2021CCF07900153E31 /* ZCMediaPlayerMaskView.h */,
+				2E28EA2121CCF07900153E31 /* ZCMediaPlayerMaskView.m */,
+			);
+			path = MediaPlayer;
+			sourceTree = "<group>";
+		};
+		2E28EA2D21CCF7B600153E31 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2E28EA2E21CCF7D200153E31 /* UILabel+LabCornerRadius.h */,
+				2E28EA2F21CCF7D200153E31 /* UILabel+LabCornerRadius.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2E4AF2F821D09AF200C0A8C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E141B1A21D215F3002F1176 /* PhotosUI.framework */,
+				2E141B1821D215EB002F1176 /* Photos.framework */,
+				2E141B1621D215E5002F1176 /* CoreImage.framework */,
+				2E141B1421D215E0002F1176 /* CoreFoundation.framework */,
+				2E4AF2F921D09AF200C0A8C6 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E28E9E421CCF00300153E31 /* ZCAVPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E28EA1121CCF00300153E31 /* Build configuration list for PBXNativeTarget "ZCAVPlayer" */;
+			buildPhases = (
+				2E28E9E121CCF00300153E31 /* Sources */,
+				2E28E9E221CCF00300153E31 /* Frameworks */,
+				2E28E9E321CCF00300153E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZCAVPlayer;
+			productName = ZCAVPlayer;
+			productReference = 2E28E9E521CCF00300153E31 /* ZCAVPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E28E9FC21CCF00300153E31 /* ZCAVPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E28EA1421CCF00300153E31 /* Build configuration list for PBXNativeTarget "ZCAVPlayerTests" */;
+			buildPhases = (
+				2E28E9F921CCF00300153E31 /* Sources */,
+				2E28E9FA21CCF00300153E31 /* Frameworks */,
+				2E28E9FB21CCF00300153E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E28E9FF21CCF00300153E31 /* PBXTargetDependency */,
+			);
+			name = ZCAVPlayerTests;
+			productName = ZCAVPlayerTests;
+			productReference = 2E28E9FD21CCF00300153E31 /* ZCAVPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E28EA0721CCF00300153E31 /* ZCAVPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E28EA1721CCF00300153E31 /* Build configuration list for PBXNativeTarget "ZCAVPlayerUITests" */;
+			buildPhases = (
+				2E28EA0421CCF00300153E31 /* Sources */,
+				2E28EA0521CCF00300153E31 /* Frameworks */,
+				2E28EA0621CCF00300153E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E28EA0A21CCF00300153E31 /* PBXTargetDependency */,
+			);
+			name = ZCAVPlayerUITests;
+			productName = ZCAVPlayerUITests;
+			productReference = 2E28EA0821CCF00300153E31 /* ZCAVPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E28E9DD21CCF00300153E31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = BaoBao;
+				TargetAttributes = {
+					2E28E9E421CCF00300153E31 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					2E28E9FC21CCF00300153E31 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E28E9E421CCF00300153E31;
+					};
+					2E28EA0721CCF00300153E31 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E28E9E421CCF00300153E31;
+					};
+				};
+			};
+			buildConfigurationList = 2E28E9E021CCF00300153E31 /* Build configuration list for PBXProject "ZCAVPlayer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E28E9DC21CCF00300153E31;
+			productRefGroup = 2E28E9E621CCF00300153E31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E28E9E421CCF00300153E31 /* ZCAVPlayer */,
+				2E28E9FC21CCF00300153E31 /* ZCAVPlayerTests */,
+				2E28EA0721CCF00300153E31 /* ZCAVPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E28E9E321CCF00300153E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E28E9F521CCF00300153E31 /* LaunchScreen.storyboard in Resources */,
+				2E28E9F221CCF00300153E31 /* Assets.xcassets in Resources */,
+				2E28E9F021CCF00300153E31 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E28E9FB21CCF00300153E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E28EA0621CCF00300153E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E28E9E121CCF00300153E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E28EA2621CCF07A00153E31 /* MainVideoTextCell.m in Sources */,
+				2EEC6CB221D1381E00F8174B /* VideoCell.m in Sources */,
+				2E28E9ED21CCF00300153E31 /* ViewController.m in Sources */,
+				2E28EA2C21CCF4E300153E31 /* ZCBasicView.m in Sources */,
+				2E28EA2521CCF07A00153E31 /* ZCMediaPlayerMaskView.m in Sources */,
+				2E28EA3021CCF7D200153E31 /* UILabel+LabCornerRadius.m in Sources */,
+				2E28EA2421CCF07A00153E31 /* ZCMediaPlayer.m in Sources */,
+				2E28E9F821CCF00300153E31 /* main.m in Sources */,
+				2E28EA2321CCF07A00153E31 /* MoviePlayerViewController.m in Sources */,
+				2E28E9EA21CCF00300153E31 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E28E9F921CCF00300153E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E28EA0221CCF00300153E31 /* ZCAVPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E28EA0421CCF00300153E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E28EA0D21CCF00300153E31 /* ZCAVPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E28E9FF21CCF00300153E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E28E9E421CCF00300153E31 /* ZCAVPlayer */;
+			targetProxy = 2E28E9FE21CCF00300153E31 /* PBXContainerItemProxy */;
+		};
+		2E28EA0A21CCF00300153E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E28E9E421CCF00300153E31 /* ZCAVPlayer */;
+			targetProxy = 2E28EA0921CCF00300153E31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E28E9EE21CCF00300153E31 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E28E9EF21CCF00300153E31 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E28E9F321CCF00300153E31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E28E9F421CCF00300153E31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E28EA0F21CCF00300153E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2E28EA1021CCF00300153E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E28EA1221CCF00300153E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5R8HB93WZS;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ZCAVPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.player.ios.avplayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b8e61fac-0cc3-42c9-9afe-b212a97c42e4";
+				PROVISIONING_PROFILE_SPECIFIER = Debug;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E28EA1321CCF00300153E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5R8HB93WZS;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ZCAVPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.player.ios.avplayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b8e61fac-0cc3-42c9-9afe-b212a97c42e4";
+				PROVISIONING_PROFILE_SPECIFIER = Debug;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E28EA1521CCF00300153E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YL74WAQM4C;
+				INFOPLIST_FILE = ZCAVPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baobaodaren.macOs.baobao.ZCAVPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZCAVPlayer.app/ZCAVPlayer";
+			};
+			name = Debug;
+		};
+		2E28EA1621CCF00300153E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YL74WAQM4C;
+				INFOPLIST_FILE = ZCAVPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baobaodaren.macOs.baobao.ZCAVPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZCAVPlayer.app/ZCAVPlayer";
+			};
+			name = Release;
+		};
+		2E28EA1821CCF00300153E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YL74WAQM4C;
+				INFOPLIST_FILE = ZCAVPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baobaodaren.macOs.baobao.ZCAVPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZCAVPlayer;
+			};
+			name = Debug;
+		};
+		2E28EA1921CCF00300153E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YL74WAQM4C;
+				INFOPLIST_FILE = ZCAVPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baobaodaren.macOs.baobao.ZCAVPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZCAVPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E28E9E021CCF00300153E31 /* Build configuration list for PBXProject "ZCAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E28EA0F21CCF00300153E31 /* Debug */,
+				2E28EA1021CCF00300153E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E28EA1121CCF00300153E31 /* Build configuration list for PBXNativeTarget "ZCAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E28EA1221CCF00300153E31 /* Debug */,
+				2E28EA1321CCF00300153E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E28EA1421CCF00300153E31 /* Build configuration list for PBXNativeTarget "ZCAVPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E28EA1521CCF00300153E31 /* Debug */,
+				2E28EA1621CCF00300153E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E28EA1721CCF00300153E31 /* Build configuration list for PBXNativeTarget "ZCAVPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E28EA1821CCF00300153E31 /* Debug */,
+				2E28EA1921CCF00300153E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E28E9DD21CCF00300153E31 /* Project object */;
+}
